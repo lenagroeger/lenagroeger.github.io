@@ -1,8 +1,8 @@
 
 body {
-  font-family: Helvetica,sans-serif;  
+  font-family: Helvetica,sans-serif;
   font-size:13px;
-  line-height: 1.6;  
+  line-height: 1.6;
   text-align: left;
   line-height: 1.5;
   margin:0;
@@ -26,7 +26,7 @@ p {
 
 .about {
   font-size: 15px;
-  line-height: 2;  
+  line-height: 2;
   font-family: "HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue", Helvetica, sans-serif;
 
 }
@@ -55,7 +55,7 @@ h4 {
   color: #6e6e6e;
 
 }
-  
+
 h1
  {
  font-family: 'Cambo', serif;
@@ -94,8 +94,8 @@ h1
 }
 
 #header .nav li {
-  display: inline;
-  margin: 22px 20px 0 20px;
+display: inline;
+margin: 22px 40px 0 0px;
 }
 
 #header .nav ul {
@@ -109,7 +109,7 @@ h1
   overflow: hidden;
   padding: 40px 24px 40px 24px;
   position: relative;
-  width: 100%;
+  width: 960px;
   border-top: 1px solid #ddd;
 }
 
@@ -203,7 +203,7 @@ a.mailicon {
 a.mailicon:hover {
 	background-position: 0 -24px;
 	}
-	
+
 a.flickricon {
 	display: inline-block;
 	width: 24px;
@@ -212,13 +212,13 @@ a.flickricon {
 	background: url("flickricon.png");
 	margin-left: 14px;
 
-	
+
 	}
 
 a.flickricon:hover {
 	background-position: 0 -24px;
 	}
-	
+
 a.facebookicon {
 	display: inline-block;
 	width: 24px;
