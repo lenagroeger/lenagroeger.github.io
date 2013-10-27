@@ -253,7 +253,7 @@ a.twittericon:hover {
   margin: 0px auto;
 }
 
-@media (max-width:480px) {
+@media screen and (max-width: 480px) {
   #footer {
   width:480px;
   }
