@@ -33,7 +33,7 @@ p {
 
 h2 {
     font-size: 30px;
-	font-family: 'Cambo', serif;
+  font-family: 'Cambo', serif;
     margin-bottom: 10px;
     color: #6b98ae;
 }
@@ -78,9 +78,9 @@ h1
 }
 
 .transparent {
-	zoom: 1;
-	filter: alpha(opacity=90);
-	opacity: 0.9;
+  zoom: 1;
+  filter: alpha(opacity=90);
+  opacity: 0.9;
 }
 
 #header .nav {
@@ -151,11 +151,11 @@ width: 100%;
 }
 
 .gulp {
-	width: 300px;
-	margin: 0px 0 0px 20px;
-	float: left;
-	display: inline;
-	position:relative;
+  width: 300px;
+  margin: 0px 0 0px 20px;
+  float: left;
+  display: inline;
+  position:relative;
 }
 
 .biggulp {
@@ -188,74 +188,78 @@ width: 600px;
 
 
 .social {
-	text-align: center;
-	margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 a.mailicon {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	text-decoration: none;
-	background: url("mailicon.png");
-	}
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+  background: url("mailicon.png");
+  }
 
 a.mailicon:hover {
-	background-position: 0 -24px;
-	}
+  background-position: 0 -24px;
+  }
 
 a.flickricon {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	text-decoration: none;
-	background: url("flickricon.png");
-	margin-left: 14px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+  background: url("flickricon.png");
+  margin-left: 14px;
 
 
-	}
+  }
 
 a.flickricon:hover {
-	background-position: 0 -24px;
-	}
+  background-position: 0 -24px;
+  }
 
 a.facebookicon {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	text-decoration: none;
-	background: url("facebookicon.png");
-	margin-left: 15px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+  background: url("facebookicon.png");
+  margin-left: 15px;
 
-	}
+  }
 
 a.facebookicon:hover {
-	background-position: 0 -24px;
-	}
+  background-position: 0 -24px;
+  }
 
 a.twittericon {
-	display: inline-block;
-	width: 24px;
-	height: 24px;
-	text-decoration: none;
-	background: url("twittericon.png");
-	margin-left: 20px;
-	}
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+  background: url("twittericon.png");
+  margin-left: 20px;
+  }
 
 a.twittericon:hover {
-	background-position: 0 -24px;
-	}
+  background-position: 0 -24px;
+  }
 
 
 #footer {
-	background: url("footer.gif") repeat-x scroll center bottom #6b98ae;
-	height: 70px;
-	margin: 0px auto;
+  background: url("footer.gif") repeat-x scroll center bottom #6b98ae;
+  height: 70px;
+  margin: 0px auto;
 }
 
 @media (max-width:480px) {
   #footer {
-	width:480px;
+  width:480px;
+  }
+
+  .wrap {
+    width: 100%;
   }
 
   .photo_container {
