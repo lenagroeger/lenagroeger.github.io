@@ -4,11 +4,10 @@ body {
   font-size:13px;
   line-height: 1.6;
   text-align: left;
-  line-height: 1.5;
   margin:0;
   padding:0;
-
 }
+
 a {
   color: #6b98ae;
   text-decoration: none;
@@ -103,6 +102,8 @@ margin: 22px 40px 0 0px;
 
 #header .nav ul {
   margin: 0 auto;
+  padding: 0px;
+
 }
 
 
