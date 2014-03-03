@@ -265,6 +265,8 @@ a.twittericon:hover {
   #header .nav {
     min-height: 15px;
     font-size: 9px;
+    width: 310px;
+    margin: auto;
   }
 
   .wrap {
