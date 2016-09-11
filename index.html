@@ -1,460 +1,440 @@
-<!DOCTYPE html>
 
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lena Groeger</title>
-  <link rel="shortcut icon" type="image/x-icon" href=
-  "http://lenagroeger.s3.amazonaws.com/images/favicon.ico" />
-  <link type="text/css" rel="stylesheet" media="all" href="reset.css" />
-  <link type="text/css" rel="stylesheet" media="all" href="default.css" />
-  <script type="text/javascript" src=
-  "http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-  <script type="text/javascript" src="smoothscroll.js">
-</script>
-<link href='http://fonts.googleapis.com/css?family=Cambo' rel='stylesheet' type='text/css'>
-</head>
+
+  <meta name="viewport" content="width=device-width">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,400,300,700' rel='stylesheet' type='text/css'>
+
+<title>Lena Groeger</title>
+
+  <style type="text/css">
+
+
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+/*    -webkit-font-smoothing: antialiased;*/
+  }
+
+  .transition, .section > div{
+      transition: all 0.10s ease-in-out;
+    -webkit-transition: all 0.10s ease-in-out;
+    -moz-transition: all 0.10s ease-in-out;
+    -o-transition: all 0.10s ease-in-out;
+  }
+
+  body {
+    font-family: 'Roboto Slab', serif;
+    padding: 0px;
+    color: #cecece;
+    margin: 0px;
+    background: #292929;
+    letter-spacing: .02em;
+    background: url("imgs/mosaic.jpg") repeat scroll center top #2a2a2a;
+    background-size: 100%;
+  }
+
+  #portfolio {
+    max-width: 960px;
+    width: 100%;
+    margin: 0px auto 200px;
+    padding: 0px 20px;
+  }
+
+  #portfolio > div {
+    margin:50px auto;
+  }
+
+  img {
+    margin: auto;
+    display: block;
+    max-height: 100px;
+  }
+
+  a {
+    color:#68b4cc;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:hover {
+    text-decoration: underline;
+   }
+
+
+  h1 {
+    font-size: 80px;
+    color:#33758b;
+    font-weight: 400;
+    margin: 50px 0px 30px;
+    line-height: 1.2em;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 10px 0px;
+    font-weight: 400;
+    letter-spacing: .02em;
+  }
+
+  h4 {
+    font-weight: 300;
+    margin:10px 0px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5em;
+    max-width: 800px;
+    margin: 0px 0px 5px 0px
+  }
+
+  #me p {
+    margin-bottom: 10px
+  }
+
+  .list p {
+    font-size: 13px;
+    margin-left: 30px;
+  }
+
+  .list p em {
+    font-weight: 400;
+    color: #fff;
+    font-style: normal;
+  }
+
+
+  .list p.year {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+
+  .section {
+    width: 100%;
+    margin:10px auto;
+    display: inline-block;
+  }
+
+  .section > div {
+    width: 100px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    margin: 0px .5% .5% 0px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  .section > div .label {
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    display: inline-block;
+    left: 0px;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    padding-top: 10px;
+  }
+
+  .section > div:hover .label {
+    opacity: 1;
+    background: rgba(0,0,0,.7);
+
+  }
+
+  .section > div .label p {
+    text-align: left;
+    color:#fff;
+    font-size: 11px;
+    padding-left:10px;
+  }
+
+
+
+  a.mailicon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    margin:0px 3px;
+  }
+
+
+  a.twittericon {
+    display: inline-block;
+    width: 21px;
+    text-decoration: none;
+    margin:0px 3px;
+    position: relative;
+    top: 1px;
+  }
+
+
+  svg {
+    fill:#33758B;
+  }
+
+  a:hover svg {
+    fill:#cecece;
+  }
+
+@media screen and (max-width: 550px){
+
+  h1 {
+      font-size: 60px;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+
+    p {
+      font-size: 17px
+    }
+    .section > div {
+      width: 32%;
+      height: auto;
+      margin: 0px 1% 1% 0px;
+    }
+
+    img {
+      height: 100%;
+      max-height: 120px;
+      width: 100%;
+      max-width: 120px
+    }
+  }
+
+  </style>
 
 <body>
 
-<!--NAVIGATION-->
+<div id="portfolio">
 
-<div id="header">
-	<div class="transparent">
-    <div class="nav">
-    <ul>
-      <li><a href="#home">Lena Groeger</a></li>
+  <div id="me">
+    <h1>Lena Groeger</h1>
+    <p>I'm a journalist, designer and developer living in New York City. I work at <a href="https://www.propublica.org/site/author/lena_groeger">ProPublica</a> making interactive graphics and other data-driven projects. I teach classes and workshops on design, coding and data visualization, and sometimes write or speak about them. I also like running (a lot). </p><p>Feel free to get in touch! You can find me on <a href="http://twitter.com//lenagroeger" class="twittericon" alt="Twitter" title="twitter">
+        <svg x="0px" y="0px" viewBox="0 0 49.1 39.9" xml:space="preserve">
+          <g id="layer1" transform="translate(-539.17946,-568.85777)">
+            <path id="path3611" class="st0" d="M554.7,608.8c18.5,0,28.6-15.3,28.6-28.6c0-0.4,0-0.9,0-1.3c2-1.4,3.7-3.2,5-5.2
+              c-1.8,0.8-3.7,1.3-5.8,1.6c2.1-1.2,3.7-3.2,4.4-5.6c-1.9,1.2-4.1,2-6.4,2.4c-1.8-2-4.4-3.2-7.3-3.2c-5.6,0-10.1,4.5-10.1,10
+              c0,0.8,0.1,1.6,0.3,2.3c-8.4-0.4-15.8-4.4-20.7-10.5c-0.9,1.5-1.4,3.2-1.4,5.1c0,3.5,1.8,6.6,4.5,8.4c-1.6-0.1-3.2-0.5-4.6-1.3v0.1
+              c0,4.9,3.5,8.9,8.1,9.9c-0.8,0.2-1.7,0.4-2.7,0.4c-0.6,0-1.3-0.1-1.9-0.2c1.3,4,5,6.9,9.4,7c-3.4,2.7-7.8,4.3-12.5,4.3
+              c-0.8,0-1.6,0-2.4-0.1C543.7,607.1,549,608.8,554.7,608.8"/>
+          </g>
+        </svg>
+      </a> or send me an <a href="mailto:lena.groeger@propublica.org" class="mailicon"  alt="Email" title="email">
+        <svg x="0px" y="0px" viewBox="0 0 24 15.9" xml:space="preserve">
+          <path class="st0" d="M0,0v2.4l12,5.8l12-5.8V0H0z M0,4.5v11.4h24V4.5l-12,5.7L0,4.5z"/>
+        </svg>
+      </a>.
+    </p>
 
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="http://lenagroeger.github.io/blog/">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
   </div>
-  </div>
-
-
-<!--HOME-->
-
-  <div id="home">
-    <div class="beginning">
-      <h1>lena groeger</h1>
-
-    </div>
-  </div>
-
-
-<!--ABOUT-->
-
-  <div id="about">
-    <div class="beginning">
-      <h2>about me</h2>
-    </div>
-
-    <div class="wrap-one">
-      <div class="doublegulp">
-        <p class= "about">I'm Lena, a science journalist and designer. I work at <a href="http://www.propublica.org/site/author/lena_groeger" target="_blank"> ProPublica</a> making news apps and interactive graphics. Sometimes I design posters. I also like running (a lot).</p>
-      </div>
-
-
-    </div>
-  </div>
-
-
-<!--WORK-->
 
 <div id="work">
-    <div class="beginning">
-      <h2>some new stuff</h2>
+
+  <h2>Work</h2>
+    <div class="section" >
+      <h4>Graphics & Data Visualization</h4>
+
+      <div><a target="_blank" href="http://projects.propublica.org/graphics/workers-compensation-benefits-by-limb"><div><img src="imgs/workerscomp_small.gif"></div> <div class="label"><p>How Much is a Limb Worth?</p></div></a></div>
+
+      <div><a target="_blank" href="https://projects.propublica.org/cruises/"><div><img src="imgs/cruisecontrol.jpg"></div> <div class="label"><p>Cruise Control</p></div></a></div>
+
+      <div><a target="_blank" href="https://projects.propublica.org/graphics/afghan"><div><img src="imgs/afghan_small.gif"></div> <div class="label"><p>We Blew $17 Billion in Afghanistan.</p></div></a></div>
+
+      <div><a target="_blank" href="https://projects.propublica.org/graphics/narco"><div><img src="imgs/narco.jpg"></div> <div class="label"><p>The Making of a Narco-Terrorist</p></div></a></div>
+
+      <div><a target="_blank" href="https://projects.propublica.org/graphics/dividend"><div><img src="imgs/tax.jpg"></div> <div class="label"><p>Tax Avoidance Has a Heartbeat</p></div></a></div>
+
+      <div><a target="_blank" href="https://projects.propublica.org/treatment/"><div><img src="imgs/treatment.jpg"></div> <div class="label"><p>Treatment Tracker</p></div></a></div>
+
+      <div><a target="_blank" href="http://projects.propublica.org/graphics/ny-millions"><div><img src="imgs/nycounties.jpg"></div> <div class="label"><p>The Millions New York Counties Coulda Got</p></div></a></div>
+
+      <div><a target="_blank" href="http://projects.propublica.org/graphics/temps-around-the-world"><div><img src="imgs/temps.gif"></div> <div class="label"><p>Temp Worker Regulations Around the World</p></div></a></div>
+
+      <div><a target="_blank" href="https://projects.propublica.org/emergency/"><div><img src="imgs/er.jpg"></div> <div class="label"><p>ER Wait Watcher</p></div></a></div>
+
+      <div><a target="_blank" href="http://projects.propublica.org/checkup"><div><img src="imgs/checkup.jpg"></div> <div class="label"><p>Prescriber Checkup</p></div></a></div>
+
+      <div><a target="_blank" href="https://web.archive.org/web/20140704111736/http://projects.propublica.org/guns/#nra"><div><img src="imgs/guns.jpg"></div> <div class="label"><p>Where Congress Stands on Guns</p></div></a></div>
+
+      <div><a target="_blank" href="https://www.propublica.org/special/murdochs-circle-the-growing-news-international-scandal"><div><img src="imgs/murdoch.jpg"></div> <div class="label"><p>Murdoch’s Circle: The News International Scandal</p></div></a></div>
+
+      <div><a target="_blank" href="https://www.propublica.org/article/tylenol-mcneil-fda-use-only-as-directed#around-the-world"><div><img src="imgs/ty.jpg"></div> <div class="label"><p>Use Only As Directed</p></div></a></div>
+
+      <div><a target="_blank" href="http://projects.propublica.org/graphics/cia-drones-strikes"><div><img src="imgs/cia.gif"></div> <div class="label"><p>Stacking Up Drone Claims</p></div></a></div>
+
+      <div><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/newwebsite/imgs/DeadDollarsDrones.jpg"><div><img src="imgs/911.jpg"></div> <div class="label"><p>The Dead, the Dollars, the Drones: 9/11 Era by the Numbers</p></div></a></div>
+
+<!--       <div><a target="_blank" href=""><div><img src="imgs/img.png"></div> <div class="label"><p>Label</p></div></a></div>
+ -->
     </div>
 
+    <div class="section">
+      <h4>Writing</h4>
 
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://projects.propublica.org/emergency/"><img src=
-        "img/emergency.jpg" alt="emergency" /></a>
-      </div>
+      <div><a target="_blank" href="https://www.propublica.org/article/discrimination-by-design"><div><img src="imgs/redline.jpg"></div> <div class="label"><p>Discrimination by Design</p></div></a></div>
 
-      <div class="gulp">
-        <h3><a href=
-        "http://projects.propublica.org/emergency/">ER Wait Watcher: Which Emergency Room Will See You the Fastest?</a></h3>
+      <div><a target="_blank" href="https://www.propublica.org/article/looks-can-kill-the-deadly-results-of-flawed-design"><div><img src="imgs/designkills.jpg"></div> <div class="label"><p>The Deadly Results of Flawed Design</p></div></a></div>
 
-        <h4>Dec 2013</h4>
+      <div><a target="_blank" href="https://www.propublica.org/article/set-it-and-forget-it-how-default-settings-rule-the-world"><div><img src="imgs/default.jpg"></div> <div class="label"><p>How Default Settings Rule the World</p></div></a></div>
 
-        <p>If you're not having a heart attack or in a life-threatening emergency, you could wait hours in the emergency room before seeing a doctor. This news app uses government data to show you how long on average you'll be waiting at nearby hospitals, plus the time it takes to get there in current traffic. <a href="http://www.propublica.org/article/how-long-will-you-wait-at-the-emergency-room">There's a story</a> to go with the app, too.
-      </p>
-      </div>
-    </div>
+      <div><a target="_blank" href="https://www.propublica.org/article/five-things-i-learned-making-a-chart-out-of-body-parts"><div><img src="imgs/limbposter.gif"></div> <div class="label"><p>5 Things I Learned Making a Chart Out of Body Parts</p></div></a></div>
 
+      <div><a target="_blank" href="https://www.propublica.org/article/too-human-not-to-fail"><div><img src="imgs/fail.gif"></div> <div class="label"><p>Too Human (Not) to Fail</p></div></a></div>
 
+      <div><a target="_blank" href="https://www.propublica.org/article/unsafe-at-many-speeds"><div><img src="imgs/ped.gif"></div> <div class="label"><p>Unsafe at Many Speeds</p></div></a></div>
 
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://www.propublica.org/article/tylenol-mcneil-fda-use-only-as-directed"><img src=
-        "img/tylenol.jpg" alt="tylenol" /></a>
-      </div>
+      <div><a target="_blank" href="https://www.propublica.org/article/how-typography-can-save-your-life"><div><img src="imgs/visualevidence-type_small.jpg"></div> <div class="label"><p>How Typography Can Save Your Life</p></div></a></div>
 
-      <div class="gulp">
-        <h3><a href=
-        "http://www.propublica.org/article/tylenol-mcneil-fda-use-only-as-directed">Overdose: Use Only as Directed</a></h3>
+      <div><a target="_blank" href="https://www.propublica.org/article/wear-patterns-how-whats-missing-can-help-us-see-data-better"><div><img src="imgs/visualevidence-wear_small.jpg"></div> <div class="label"><p>How What’s Missing Can Help Us See Data Better</p></div></a></div>
 
-        <h4>Sept 2013</h4>
+      <div><a target="_blank" href="https://www.propublica.org/article/how-information-graphics-reveal-your-brains-blind-spots"><div><img src="imgs/illusion.jpg"></div> <div class="label"><p>How Information Graphics Reveal Your Brain’s Blind Spots</p></div></a></div>
 
-        <p>America's most popular pain killer is much riskier than you might think. 150 Americans die each year and tens of thousands get sent to the emergency room by accidentally taking too much acetaminophen, the active ingredient in Tylenol. This story explains why.</p>
-      </div>
-    </div>
+      <div><a target="_blank" href="https://www.propublica.org/nerds/item/on-repeat-how-to-use-loops-to-explain-anything"><div><img src="imgs/loops_small.gif"></div> <div class="label"><p>How to Use Loops to Explain Anything</p></div></a></div>
 
+      <div><a target="_blank" href="https://www.propublica.org/nerds/item/a-big-article-about-wee-things"><div><img src="imgs/waldo.jpg"></div> <div class="label"><p>A Big Article About Wee Things</p></div></a></div>
 
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://projects.propublica.org/checkup/"><img src=
-        "img/checkup.jpg" alt="checkup" /></a>
-      </div>
+      <div><a target="_blank" href="https://www.propublica.org/nerds/item/design-principles-for-news-apps-graphics"><div><img src="imgs/designprin.jpg"></div> <div class="label"><p>Design Principles for News Apps & Graphics</p></div></a></div>
 
-      <div class="gulp">
-        <h3><a href=
-        "http://projects.propublica.org/checkup/">Prescriber Checkup: The Doctors and Drugs in Medicare Part D</a></h3>
+      <div><a target="_blank" href="https://www.propublica.org/nerds/item/new-years-resolution-learn-to-code"><div><img src="imgs/code.png"></div> <div class="label"><p>New Year’s Resolution: Learn to Code</p></div></a></div>
 
-        <h4>May 2013</h4>
-
-        <p>By failing to monitor the drugs that doctors prescribe, Medicare has wasted billions of dollars on brand-name drugs and exposed elderly and disabled people to drugs they shouldn't take. This app lets you look up your doctor to see what drugs he or she prescribes and how that compares with other doctors. </p>
-      </div>
-    </div>
-
-
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://source.opennews.org/en-US/learning/design-principles-news-apps-graphics/"><img src=
-        "img/designprin.jpg" alt="designprinciples" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href=
-        "http://source.opennews.org/en-US/learning/design-principles-news-apps-graphics/">Design Principles for News Apps and Graphics
-</a></h3>
-
-        <h4>May 2013</h4>
-
-        <p>The tools and techniques to present information in a graphic or news app may differ depending on your project, but the basic design principles stay pretty much the same. Here's how to apply these classic principles to your newfangled graphics and apps.</p>
-      </div>
-    </div>
-
-
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://projects.propublica.org/pipelines"><img src=
-        "img/pipelines.png" alt="pipelines" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href=
-        "http://projects.propublica.org/pipelines">Pipeline Safety Tracker
-</a></h3>
-
-        <h4>November 2012</h4>
-
-        <p>Every year the over 2.5 million miles of oil and natural gas pipelines suffer hundreds of ruptures and leaks, costing lives and millions of dollars. This interactive map tracks those accidents across the country.  </p>
-      </div>
-    </div>
-
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://projects.propublica.org/graphics/cia-drones-strikes"><img src=
-        "img/drones.png" alt="drones" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href=
-        "http://projects.propublica.org/graphics/cia-drones-strikes">Stacking Up the Adminstration's Drone Claims
-</a></h3>
-
-        <h4>Sept 2012</h4>
-
-        <p>A graphic built, quite literally, out of statements by current and former government officials talking about the CIA drone program &#8211; or refusing to confirm or deny its existence. Also a tribute to tiny text on the web.</p>
-      </div>
-    </div>
-
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://projects.propublica.org/nursing-homes"><img src=
-        "img/nhinspect.png" alt="nursing_home_inspect" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href=
-        "http://projects.propublica.org/nursing-homes">Nursing Home Inspect
-</a></h3>
-
-        <h4>August 2012</h4>
-
-        <p>An online interactive database that lets you explore and search thousands of nursing home inspection reports, written up by federal auditors who flag dangerous conditions such as missing residents or physical abuse.</p>
-      </div>
-    </div>
-
-
-        <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://www.propublica.org/special/obama-vs-bush-on-national-security-timeline"><img src="img/nat-sec-timeline.png" alt="nat-sec-timeline" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href=
-        "http://www.propublica.org/special/obama-vs-bush-on-national-security-timeline">Timeline: How Obama Compares to Bush on Torture, Surveillance and Detention
-</a></h3>
-
-        <h4>May 2012</h4>
-
-        <p>A look at the evolution of national security policies from 9/11 to the present.</p>
-      </div>
-    </div>
-
-
-
-
-
-
-
-<!-- <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://www.propublica.org/special/what-the-frack-is-in-that-water"><img src=
-        "fracktabs.jpg" alt="fracking water" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href=
-        "http://www.propublica.org/special/what-the-frack-is-in-that-water">What the Frack is in That Water?</a></h3>
-
-        <h4>March 2012</h4>
-
-        <p>A look at all the typical, toxic, and just plain weird stuff that goes into the fracking fluid that drillers use to extract natural gas from rock.</p>
-      </div>
-    </div> -->
-
-
-
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://www.propublica.org/special/murdochs-circle-the-growing-news-international-scandal"><img src=
-        "img/murdoch.jpg" alt="murdoch" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href=
-        "http://www.propublica.org/special/murdochs-circle-the-growing-news-international-scandal">Murdoch's Circle: The Growing News International Scandal</a></h3>
-
-        <h4>FEBRUARY 2012</h4>
-
-        <p>A collection of all the arrests and resignations in the expanding News Corp scandal, in rings of proximity to Rupert Murdoch himself.</p>
-      </div>
-    </div>
-
-
-      <div class="wrap">
-        <div class="photo_container">
-          <div class="biggulp">
-            <a href="http://storycollider.org/shows/2012-01-24"><img width="285" src=
-            "img/wilderness.jpg" alt="wilderness" /></a><a href=
-            "http://storycollider.org/shows/2011-11-22"><img width="285" src=
-            "img/bodiesinmotion.jpg" alt="bodiesmotion" /></a>
-          </div>
-          <div class="biggulp">
-            <a href="http://storycollider.org/shows/2011-05-18"><img width="285" src=
-            "img/bodyplans.jpg" alt="bodyplans" /></a><a href=
-            "#"><img width="285" src=
-            "img/perception.jpg" alt="perception" /></a>
-          </div>
-        </div>
-
-        <div class="gulp">
-          <h3><a href=
-          "http://storycollider.org/">The Story Collider</a></h3>
-
-          <h4>2011-12</h4>
-
-          <p>Posters for science storytelling performances organized by the Story Collider, an online and onstage project in NYC.</p>
-        </div>
 
     </div>
 
+    <div class="section">
+      <h4>Posters & Logos</h4>
+       <div><a target="_blank" href="http://www.flashforwardpod.com/" target="_blank"><div><img src="imgs/flash.jpg"></div> <div class="label"><p>Logo for Flash Forward</p></div></a></div>
 
-
-
-
-
-    <div class="beginning">
-      <h2>some older stuff</h2>
-    </div>
-
-
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://www.wired.com/dangerroom/2011/09/dangerroom_911toll_0909/all/1"><img src=
-        "img/deaddollarsdrones.gif" alt="wired" /></a>
+      <div>
+        <a target="_blank" href="http://lenagroeger.s3.amazonaws.com/posters/Wilderness.pdf" target="_blank"><div><img src="imgs/wilderness.jpg"></div> <div class="label"><p>Poster for the Story Collider: Wilderness</p></div></a>
       </div>
+      <div><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/posters/BodiesMotion.pdf" target="_blank"><div><img src="imgs/bodiesinmotion.jpg"></div> <div class="label"><p>Poster for the Story Collider: Bodies in Motion</p></div></a></div>
+      <div><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/posters/Perception.pdf" target="_blank"><div><img src="imgs/perception.jpg"></div> <div class="label"><p>Poster for the Story Collider: Perception</p></div></a></div>
+      <div><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/posters/BodyPlansPoster.pdf" target="_blank"><div><img src="imgs/bodyplans.jpg"></div> <div class="label"><p>Poster for the Story Collider: Body Plans</p></div></a></div>
+      <div><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/posters/ReinventionGearsHorz.pdf" target="_blank"><div><img src="imgs/reinvention.jpg"></div> <div class="label"><p>Poster for the Story Collider: Reinvention</p></div></a></div>
 
-      <div class="gulp">
-        <h3><a href=
-        "http://www.wired.com/dangerroom/2011/09/dangerroom_911toll_0909/all/1">The Dead, the Dollars, the Drones</a></h3>
-
-        <h4>September 2011</h4>
-
-        <p>A series of interactive graphics on the costs of a decade of conflict since 9/11.</p>
-      </div>
-    </div>
-
-
-<div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://www.propublica.org/special/where-are-the-foreclosure-deal-millions-going"><img src=
-        "img/homeownermap.png" alt="homeowner" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href=
-        "http://www.propublica.org/special/where-are-the-foreclosure-deal-millions-going">Where Are the Foreclosure Deal Millions Going in Your State?
-</a></h3>
-
-        <h4>May 2012</h4>
-
-        <p>A map of what states are doing with the $2.5 billion of housing aid cash they got from banks. (Hint: it's not all going towards homeowners.) <a href="http://www.propublica.org/nerds/item/mapping-state-millions">Here's an explanation</a> of the map-making process.</p>
-      </div>
-    </div>
-
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://www.propublica.org/special/a-history-of-fda-inaction-on-animal-antibiotics"><img src=
-        "img/antibiotics.jpg" alt="fda antibiotics" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href=
-        "http://www.propublica.org/special/a-history-of-fda-inaction-on-animal-antibiotics">A History of FDA Inaction on Animal Antibiotics
-</a></h3>
-
-        <h4>April 2012</h4>
-
-        <p>A timeline of the (minimal) government oversight of livestock antibiotics. Constantly feeding animals antibiotics can lead to drug resistant "super bugs" and threaten human health.</p>
-      </div>
-    </div>
-
-
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://www.propublica.org/special/from-gung-ho-to-uh-oh-charting-the-governments-moves-on-fracking"><img src=
-        "img/fracktimeline.png" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href="http://www.propublica.org/special/from-gung-ho-to-uh-oh-charting-the-governments-moves-on-fracking">From Gung-Ho to Uh-Oh: Charting the Government's Moves on Fracking</a></h3>
-
-        <h4>February 2012</h4>
-
-        <p>A timeline of the evolving government approach to natural gas drilling, or fracking. (Fun fact: it started with nuclear explosions.)</p>
-      </div>
-    </div>
-
-
-<!--      <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://dl.dropbox.com/u/7945837/betterlife/project.html"><img src=
-        "betterlife.png" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href=
-        "http://dl.dropbox.com/u/7945837/betterlife/project.html">The Better Life Across the Globe</a></h3>
-
-        <h4>August 2011</h4>
-
-        <p>A visualization of data from the <a href=
-        "http://oecdbetterlifeindex.org/">OECD</a> on how people's priorities about "the good life" differ depending on where they live.</p>
-      </div>
-    </div> -->
-
-
-<!--
-    <div class="wrap">
-      <div class="biggulp">
-        <a href=
-        "http://blogs.scientificamerican.com/guest-blog/2011/04/08/radiation-levels-explained-an-exposure-infographic/"><img src=
-        "radiation.jpg" alt="radiation" /></a>
-      </div>
-
-      <div class="gulp">
-        <h3><a href= "http://blogs.scientificamerican.com/guest-blog/2011/04/08/radiation-levels-explained-an-exposure-infographic/">Radiation Explained</a></h3>
-
-        <h4>April 2011</h4>
-
-        <p>A visualization of various sources of radiation (from a chest xray to a nuclear accident) to give context to the levels released during the Fukushima disaster.</p>
-      </div>
-    </div> -->
-
-
-
-    <div class="wrap">
-      <div class="photo_container">
-        <div class="biggulp">
-         <img width="285" src=
-          "img/celebratebody.jpg" alt="celebratebody" /><img width="285" src=
-          "img/isthisok.jpg" alt="isthisok" />
-        </div>
-        <div class="biggulp">
-          <img width="285" src=
-          "img/freshmeat.png" alt="freshmeat" /><img width="285" src=
-          "img/deepbreath.jpg" alt="deepbreath" /></a>
-        </div>
-      </div>
-
-      <div class="gulp">
-        <h3><a href="http://www.brown.edu/Student_Services/Health_Services/Health_Education/">Brown University Health Educaton</a></h3>
-        <h4>2007-2009</h4>
-        <p>A series of public health posters for the Brown student body and Providence community on all kinds of topics: nutrition and fitness, drug and alcohol abuse, mental health and campus safety (to name a few).</p>
-      </div>
     </div>
 
 
 
   </div>
 
+  <div id="talks">
+    <div class="list">
+      <h2>Talks & Teaching</h2>
 
-<!--CONTACT-->
+      <p class="year">2016</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/talks/infoplus/meatcharts.html">Meat Charts</a></em>: Talk at Information+ Conference, Vancouver</p>
+      <p><em><a target="_blank" href="projects.propublica.org/graphics/summer">ProPublica Data Institute</a></em>: Two-week Workshop at ProPublica, New York</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/makeawebsite/makeawebsite.html">Make a Website from Scratch</a></em>: Workshop at New York University, New York</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/talks/malofiej/malofiej.html">Seeing the Error of Your Ways</a></em>: Talk at Malofiej Conference, Spain</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/nyu-2016/introdatacode.html">Intro to Data Journalism</a></em>: Workshop at New York University, New York</p>
 
-  <div id="contact">
-    <div class="beginning">
-      <h2>contact</h2>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/newschool/VisualizingDataSyllabus.pdf">Visualizing Data</a></em>: Course at The New School, Journalism + Design, New York</p>
+
+
+      <p class="year">2015</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/talks/socialgraphics/socialgraphics.html">Design & Social Graphics</a></em>: Workshop at CUNY Graduate School of Journalism, New York</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/talks/designforj/designforj.html">Design for Journalists</a></em>: Talk at CUNY Graduate School of Journalism, New York</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/talks/dortmund/dortmund.html">Use Science for Better Data Journalism Projects</a></em>: Talk at Data Labs Conference, Germany</p>
+      <p><em><a target="_blank" href="https://gijc15.sched.org/event/3TCX/data-track-design-principles-for-news-apps?iframe=no&w=i:100;&sidebar=yes&bg=no">Design Principles for News Apps</a></em>: Workshop at Global Investigative Journalism Conference, Norway</p>
+      <p><em><a target="_blank" href="https://gijc15.sched.org/event/3TBc/data-track-viz-for-journalists?iframe=no&w=i:100;&sidebar=yes&bg=no">Data Viz for Journalists</a></em>: Talk at Global Investigative Journalism Conference, Norway</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/talks/orlando/orlando-data.html">Intro to Data & Code</a></em>: Workshop at National Association of Hispanic Journalists Conference, Orlando</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/newschool/syllabus.html">Visualizing Data</a></em>: Course at The New School, Journalism + Design, New York</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/cuny-fall15/index.html">Design & Presentation</a></em>: Course at CUNY Graduate School of Journalism, New York</p>
+
+      <p><em><a target="_blank" href="https://old.etherpad-mozilla.org/news-nadsat">How to Build Better Newsrooms with Better Language</a></em>: Workshop at SRCCON Conference, Minneapolis</p>
+
+      <p><em><a target="_blank" href="https://github.com/lenagroeger/photoshop">Make Photoshop Work For You</a></em>: Workshop at Investigative Reporters and Editors Conference, Philadelphia</p>
+      <p><em><a target="_blank" href="https://www.youtube.com/watch?v=zd0YQAgu3dI">That's the Power of Loops</a></em>: Talk at OpenVis Conference, Boston</p>
+      <p><em>Design/Viz: What to Do, What Not to Do</em>: Workshop at NICAR Conference, Atlanta</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/talks/nicar-2015/loops-nicar/loops.html">How to Use Loops to Explain Anything + Gifs</a></em>: Workshop at NICAR Conference, Atlanta</p>
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/talks/nicar-2015/timelines-nicar/timelines.html">Making Timelines</a></em>: Workshop at NICAR Conference, Atlanta</p>
+
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/nyu/nyu-data.html">Data Visualization & Design</a></em>: Workshop at New York University, New York</p>
+
+      <p class="year">2014</p>
+      <p><em>Data Journalism</em>: Workshop at the Czech Centre for Investigative Journalism, Prague</p>
+
+      <p><em>Women and Code</em>: Talk at the Ethical Culture Fieldston School, New York</p>
+
+      <p><em><a target="_blank" href="https://www.youtube.com/watch?v=ZPAp3Fxx7TE&index=17&list=PLlgxAbM67lYLcGj8M00_6XlB1Pg5eAGqG">Think Small: the Power of Wee Things</a></em>: Talk at OpenVis Conference, Boston</p>
+
+      <p><em><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/talks/nydataviz/impact.html">Impact, or, things I've learned about telling stories at ProPublica</a></em>: Talk at Data Visualization Meetup, New York</p>
+
+      <p><em><a target="_blank" href="https://ire.org/events-and-training/event/973/1134/">DataViz for everyone: A practical guide to going responsive</a></em>: Talk at NICAR Conference, Baltimore</p>
+
+
+      <p class="year">2013</p>
+      <p><em>Science Journalism</em>: Talk at World Conference of Science Journalists, Helsinki</p>
+
+      <p><em><a target="_blank" href="http://mediashift.org/2013/05/coding-for-the-future-the-rise-of-hacker-journalism/">Coding for the Future: The Rise of Hacker Journalism</a></em>: Talk at West Virginia University, West Virginia</p>
+
+      <p><em><a target="_blank" href=""><a target="_blank" href="http://lenagroeger.s3.amazonaws.com/talks/nicar/timelines/timelines.html">Timelines</a></a></em>: Workshop at NICAR Conference, Louisville</p>
+
+      <p><em>CAR and News Apps</em>: Talk at NICAR Conference, Louisville</p>
+
+      <p><em>Data Visualization</em>: Workshop at ScienceOnline Conference, Raleigh</p>
+
+
+
+
+
+
     </div>
-    <div class="wrap-one">
-      <div class="social">
-        <p class= "about">If you want to get in touch, <a href="mailto:lgroeger@gmail.com">email</a> is probably best. But you have options.</p>
 
-        <a href="mailto:lgroeger@gmail.com" class="mailicon" title="mail"></a>
-        <a href="http://twitter.com//lenagroeger" class="twittericon" title="twitter"></a>
-        <a href="http://www.facebook.com/lena.groeger" class="facebookicon" title="facebook"></a>
-     	<a href="http://www.flickr.com/photos/runnlenarunn/" class="flickricon" title="flickr"></a>
 
-      </div>
-     </div>
+  </div>
+
+  <div id="awards">
+    <div class="list">
+      <h2>Awards & Recognition</h2>
+
+      <p class="year">2016</p>
+      <p><em>Insult to Injury: Winner in Explanatory</em>, Loeb Award</p>
+      <p><em>Insult to Injury: Winner for Public Service and Finalist in Business Investigative Reporting</em>, Deadline Club</p>
+      <p><em>Insult to Injury: Winner of IRE Medal Print/Online Large</em>, Investigative Reporters and Editors</p>
+      <p><em>Insult to Injury: Finalist</em>, Livingston Awards for Young Journalists</p>
+      <p><em>Workers Comp Benefits: How Much is a Limb Worth? Bronze Medal</em>, Malofiej</p>
+
+      <p class="year">2015</p>
+      <p><em>Insult to Injury: Al Neuharth Innovation in Investigative Journalism Award</em>, Online News Association</p>
+      <p><em>Individual Portfolio: Award of Excellence</em>, Society for News Design</p>
+
+      <p><em>Treatment Tracker: Silver Medal</em>, Society for News Design</p>
+
+      <p class="year">2014</p>
+      <p><em>The Prescribers: Philip Meyer Award</em>, Investigative Reporters and Editors</p>
+
+      <p><em>ER Wait Watcher: Finalist in Health Care Reporting</em>, Online News Association</p>
+      <p><em>Overdose: Al Neuharth Innovation in Investigative Journalism Award</em>, Online News Association</p>
+
+      <p><em>ER Wait Watcher: Silver Medal</em>, Malofiej</p>
+
+      <p><em>Individual Portfolio: Award of Excellence</em>, Society for News Design</p>
+
+      <p class="year">2013</p>
+      <p><em>Pipeline Safety Tracker: Silver Medal</em>, Society for News Design</p>
+
+      <p><em>Nursing Home Inspect: Silver Medal</em>, Society for News Design</p>
+
+      <p><em>Individual Portfolio: Award of Excellence</em>, Society for News Design</p>
+
     </div>
+  </div>
+
+</div>
 
 
-<!--FOOTER-->
-
-  <div id="footer"></div>
 </body>
-</html>
